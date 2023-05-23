@@ -1,23 +1,44 @@
 import logo from './logo.svg';
 import './App.css';
+import useInput from './hooks/useInput';
 
 function App() {
+
+//   const initialValues = {
+//     email:'',
+//     password:''
+//   } 
+
+// const validatedSchema = {
+//   email:{
+//     required:'required',
+//   },
+//   password:{
+//     required:true
+//   }
+// }
+
+//   const {value,handleBlur,handleChange,handleFocus,error} = useInput(initialValues,validatedSchema)
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <input 
+        name = {'email'}
+        onFocus={handleFocus}
+        onChange ={handleChange}
+        onBlur={handleBlur}
+        value={value?.email}
+        type={"text"}
+      />
+      <p style = {{color:'red'}}>{error?.email?.hasError && error.email?.message}</p> 
+     
+     <input 
+        name = {'password'}
+        onFocus={handleFocus}
+        onChange ={handleChange}
+        onBlur={handleBlur}
+        value={value.password}
+      /> */}
     </div>
   );
 }
