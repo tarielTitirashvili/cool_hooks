@@ -2,6 +2,7 @@ import './App.css';
 import useInput from './hooks/useInput';
 import Timeout from './components/timeout';
 import DebounceComponent from './components/debounce';
+import UpdateEffect from './components/updateEffect';
 
 function App() {
 
@@ -23,8 +24,9 @@ function App() {
 
   return (
     <div>
-      <Timeout />
-      <DebounceComponent />
+      {/* <Timeout />
+      <DebounceComponent /> */}
+      <UpdateEffect />
       {/* <input 
         name = {'email'}
         onFocus={handleFocus}
