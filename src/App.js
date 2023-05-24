@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import useInput from './hooks/useInput';
 import Timeout from './components/timeout';
