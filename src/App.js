@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import useInput from './hooks/useInput';
+import Timeout from './components/timeout';
+import DebounceComponent from './components/debounce';
 
 function App() {
 
@@ -21,7 +23,9 @@ function App() {
 //   const {value,handleBlur,handleChange,handleFocus,error} = useInput(initialValues,validatedSchema)
 
   return (
-    <div className="App">
+    <div>
+      <Timeout />
+      <DebounceComponent />
       {/* <input 
         name = {'email'}
         onFocus={handleFocus}
