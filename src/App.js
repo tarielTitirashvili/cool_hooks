@@ -3,6 +3,7 @@ import useInput from './hooks/useInput';
 import Timeout from './components/timeout';
 import DebounceComponent from './components/debounce';
 import UpdateEffect from './components/updateEffect';
+import PreviousValue from './components/previousValue';
 
 function App() {
 
@@ -26,7 +27,8 @@ function App() {
     <div>
       {/* <Timeout />
       <DebounceComponent /> */}
-      <UpdateEffect />
+      {/* <UpdateEffect /> */}
+      <PreviousValue />
       {/* <input 
         name = {'email'}
         onFocus={handleFocus}

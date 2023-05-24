@@ -6,7 +6,8 @@ function Timeout() {
   const {clear, reset} = useTimeout(() => setCount(0), 1000)
   return (
     <div>
-      <h1>{count}</h1>
+      <h1>Timeout</h1>
+      <h3>{count}</h3>
       <button 
         onClick={()=>setCount((prev)=>prev+1)}
       >

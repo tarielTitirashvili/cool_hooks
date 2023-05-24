@@ -7,7 +7,8 @@ function UpdateEffect() {
 
   return (
     <div>
-      <div>{count}</div>
+      <h1>UpdateEffect</h1>
+      <h3>{count}</h3>
       <button onClick={() => setCount(c => c + 1)}>Increment</button>
     </div>
   )
