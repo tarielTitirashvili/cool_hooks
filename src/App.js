@@ -20,6 +20,13 @@ function App() {
 //     required:true
 //   }
 // }
+// cleaning up console
+function clearConsole() {
+  const production = process.env.NODE_ENV === 'production'
+  if(production) 
+      console.log = console.warn = console.error = () => {}
+}
+clearConsole()
 
 //   const {value,handleBlur,handleChange,handleFocus,error} = useInput(initialValues,validatedSchema)
 
